@@ -1,1 +1,31 @@
 @import "tailwindcss";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #C1DBE3;
+}
+
+@layer utilities {
+  @keyframes isFlipped {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  @keyframes isNotFlipped {
+    0% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+  .animate-flipped {
+    animation: isFlipped 0.2s ease-in-out;
+  }
+  .animate-not-flipped {
+    animation: isNotFlipped 0.2s ease-in-out;
+  }
+}
