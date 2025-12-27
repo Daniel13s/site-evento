@@ -99,7 +99,7 @@ export default function Home() {
             Coloque o seu investimento no topo do google com essas dicas
           </h3>
         </section>
-        <section className="w-screen h-screen flex flex-col justify-center items-center text-center pt-10 pb-10 flex flex-col gap-5">
+        <section id="register" className="w-screen h-screen flex flex-col justify-center items-center text-center pt-10 pb-10 flex flex-col gap-5">
           <h2 className="text-2xl font-bold">Cadastre-se</h2>
           <div className="flex flex-col items-start">
             <label className="text-[12px] ml-3" htmlFor="email">
