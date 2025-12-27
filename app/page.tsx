@@ -37,9 +37,7 @@ export default function Home() {
           Transforme sua marca e conecte-se com seu público
         </h2>
 
-        <button className="p-4 bg-[#536271] w-50 rounded-4xl mt-15 text-white font-bold">
-          Saiba Mais
-        </button>
+        <Link href="#register" className="p-4 bg-[#536271] w-50 rounded-4xl mt-15 text-white font-bold"> Saiba mais!</Link>
       </header>
       <main className="w-screen h-auto flex flex-col items-center gap-4">
         <section className="w-screen h-auto flex flex-col items-center gap-4 pt-10 pb-10">
