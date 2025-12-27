@@ -84,7 +84,7 @@ export default function Home() {
                   : "animate-not-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
               }
             >
-              {isFlipped3 ? (
+              {!isFlipped3 ? (
                 <strong>
                   Eu não entendo nada de tecnologia. Vou conseguir aplicar as
                   sugestões que você me der?
