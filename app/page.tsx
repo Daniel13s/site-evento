@@ -38,7 +38,7 @@ export default function Home() {
           Transforme sua marca e conecte-se com seu público
         </h2>
 
-        <Link href="#register" className="p-4 bg-[#536271] w-50 rounded-4xl mt-15 text-white font-bold"> Saiba mais!</Link>
+        <Link href="#register" className="shadow-gray-500 shadow-md p-4 bg-[#536271] w-50 rounded-4xl mt-15 text-white font-bold"> Saiba mais!</Link>
       </header>
       <main className="w-screen h-auto flex flex-col items-center gap-4">
         <section className="w-screen h-auto flex flex-col items-center gap-4 pt-10 pb-10">
@@ -48,8 +48,8 @@ export default function Home() {
               onClick={() => setIsFlipped1(!isFlipped1)}
               className={
                 isFlipped1
-                  ? "animate-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
-                  : "animate-not-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  ? "animate-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  : "animate-not-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
               }
             >
               {!isFlipped1 ? (
@@ -62,8 +62,8 @@ export default function Home() {
               onClick={() => setIsFlipped2(!isFlipped2)}
               className={
                 isFlipped2
-                  ? "animate-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
-                  : "animate-not-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  ? "animate-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  : "animate-not-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
               }
             >
               {!isFlipped2 ? (
@@ -79,8 +79,8 @@ export default function Home() {
               onClick={() => setIsFlipped3(!isFlipped3)}
               className={
                 isFlipped3
-                  ? "animate-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
-                  : "animate-not-flipped w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  ? "animate-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
+                  : "animate-not-flipped shadow-gray-500 shadow-md w-80 h-45 bg-[#6A687A] rounded-2xl flex justify-center items-center text-white text-center p-3"
               }
             >
               {!isFlipped3 ? (
@@ -124,12 +124,12 @@ export default function Home() {
               onChange={(e) => setInstagram(e.target.value)}
             />
           </div>
-          <button className="p-4 bg-[#536271] w-50 rounded-4xl text-white font-bold flex items-center justify-center"
+          <button className="shadow-gray-500 shadow-md p-4 bg-[#536271] w-50 rounded-4xl text-white font-bold flex items-center justify-center"
           onClick={sendEmail}>
             {loading ? <CgSpinner className="animate-spin" size={20} /> : "Quero minhas dicas!"}
           </button>
         </section>
-        <footer className="w-screen h-40 bg-[#6A687A]">
+        <footer className="w-screen shadow-gray-500 shadow-sm h-40 bg-[#6A687A]">
           <h4 className="text-white text-center pt-16 opacity-30">
             © 2025 Desenvolvido por Daniel Silva
           </h4>
